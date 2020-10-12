@@ -53,6 +53,11 @@ class Song
   end
 
   def self.new_from_filename(file_name)
+    song = self.new
+    song.artist_name = (file_name.split(" - ")[0])
+    song.name = (file_name.split(" - ")[1].chomp(".mp3"))
+    song
+=begin
     items = file_name.split(/[-.]/)
       artist_name = items[0]
       song_name = items[1].split(".")
@@ -63,6 +68,7 @@ class Song
       song.name = name
       song
     items
+=end
   end
 
 end
