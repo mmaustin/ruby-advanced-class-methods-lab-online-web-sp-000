@@ -50,7 +50,7 @@ class Song
 
   def self.alphabetical
     array = []
-    @@all.each do |tune|
+    @@all.collect do |tune|
       array << tune.name
     end
     array.sort
