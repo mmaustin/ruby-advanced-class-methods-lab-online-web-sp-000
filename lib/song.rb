@@ -49,11 +49,14 @@ class Song
   end
 
   def self.alphabetical
+    self.all.sort_by {|song| song.name}
+=begin
     array = []
     @@all.collect do |tune|
       array << tune.name
     end
     array.sort
+=end
   end
 
 end
