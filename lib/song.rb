@@ -7,7 +7,7 @@ class Song
   end
 
   def save
-    self.class.all << self #seems like this refers to an instance and not the class
+    self.class.all << self #seems like this refers to an instance and not the class?
   end
 
   def self.create
