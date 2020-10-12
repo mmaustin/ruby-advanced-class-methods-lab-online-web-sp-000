@@ -57,10 +57,10 @@ class Song
       artist_name = items[0]
       name = items[1]
 
-      tune = self.new
-      tune.artist_name = artist_name
-      tune.name = name
-      tune
+      song = self.new
+      song.artist_name = artist_name
+      song.name = name
+      song
     items
   end
 
