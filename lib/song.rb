@@ -59,7 +59,7 @@ class Song
     song.name = (file_name.split(" - ")[1].chomp(".mp3"))
     song
 =end
-    items = file_name.split(/[-.]/)
+    items = file_name.split(" - ")
       artist_name = items[0]
       name = items[1].chomp(".mp3")
 
